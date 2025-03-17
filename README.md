@@ -39,7 +39,11 @@ Este flujo se basa en eventos provenientes de la API de TransportAPI (trenes en 
 ```
 kafka-project01/
 ├── docker/
+│   └── flask-api/
+│       └── Dockerfile
 │   └── flink-jobrunner/
+│       └── Dockerfile
+│   └── mongo-consumer/
 │       └── Dockerfile
 ├── jars/
 │   ├── flink-connector-kafka-1.17.0.jar
@@ -49,6 +53,7 @@ kafka-project01/
 │   ├── transform_flink_job.py
 │   ├── persist_mongo_consumer.py
 │   └── flask_api.py
+├── scripts/
 ├── requirements.txt
 └── docker-compose.yml
 ```
@@ -112,7 +117,7 @@ http://localhost:5000/trains
 ---
 
 ## 🌟 Autor
-Carlos - Ingeniero de Datos
+Carlos Aquino - Ingeniero de Datos
 
 ---
 
